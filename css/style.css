@@ -6,22 +6,54 @@
     box-sizing: border-box;
 }
 
+#videos_section {
+    width: 90vw;
+    height: 100vh;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vh;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+#videos_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20vh;
+}
+.video_container {
+    display: flex;
+    flex-direction: column;
+}
+.craft_video {
+    width: 600px;
+}
+
+.video_description {
+    color: #ffffff;
+    width: 600px;
+}
+
+#gallery {
+    height: 100vh;
+}
+
 .story_container {
     background-color: #03004d;
     color: white;
     font-family: 'Raleway';
-    font-size: 14px;
-<<<<<<< HEAD
+    font-size: 20px;
     width: 90vw;
-    float: right;
-=======
->>>>>>> master
+    height: 100vh;
+    float: right;  
 }
-
 .story_title {
     font-family: 'Crimson Text';
-    padding: 10px 450px;
+    padding: 24px 450px;
     text-align: end;
+    font-size: 48px;
 }
 
 .line_separator1 {
@@ -47,47 +79,78 @@
 }
 
 .story_image {
-    height: 220px;
+    height: 350px;
     margin: 20px;
     border-radius: 10px;
 }
 
 .story_text {
-    margin: 20px;
+    margin: 30px;
     text-align: justify;
-
-<<<<<<< HEAD
+    margin-bottom: 75px;
 }
+
 body {
     font-family: sans-serif;
     background-color: #03004d;
 }
+
 .gallery_pics {
     width: 450px;
     height: auto;
     margin-right: 50px;
     margin-bottom: 100px;
 }
-#gallery {
+
+#gallery_container {
     height: 100vh;
     width: 90vw;
     float: right;
     text-align: center;
-    padding-top: 20vh;
 }
+
+#gallery {
+    padding-top: 15vh;
+}
+
 #mainvideo_container {
     width: 90vw;
+    clear: both;
     float: right;
 }
-#videotext_container {
+
+#mainvideotext_container {
     position: absolute;
     z-index: 3;
-    bottom: 25vh;
-    left: 25vw;
+    bottom: 20vh;
+    left: 20vw;
+}
+#blackrec {
+    position: absolute;
+    background-color: #000000;
+    opacity: 50%;
+    height: 100vh;
+    width: 90vw;
+    right: 0;
+}
+#line {
+    border-bottom: #e6e6e6 solid 10px;
+    margin: 12px auto;
+}
+#name {
+    font-family: 'Crimson-text';
+    font-size: 100px;
+    color: #e6e6e6;
+}
+#shop {
+    font-family: 'Crimson-text';
+    font-size: 80px;
+    color: #e6e6e6;
 }
 #mainvideo {
     height: 100vh;
 }
+
 .nav_container {
     display: flex;
     flex-direction: column;
@@ -98,8 +161,8 @@ body {
     margin: auto;
     justify-content: space-around;
     width: 200px;
-    background-color: lightgray;
-
+    background-color: #e6e6e6;
+    z-index: 3;
 }
 
 .nav_element {
@@ -166,6 +229,4 @@ body {
     width: 50px;
     height: 2px;
     background: black;
-=======
->>>>>>> master
 }
