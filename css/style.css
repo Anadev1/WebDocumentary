@@ -11,8 +11,11 @@
     color: white;
     font-family: 'Raleway';
     font-size: 14px;
+<<<<<<< HEAD
     width: 90vw;
     float: right;
+=======
+>>>>>>> master
 }
 
 .story_title {
@@ -53,6 +56,7 @@
     margin: 20px;
     text-align: justify;
 
+<<<<<<< HEAD
 }
 body {
     font-family: sans-serif;
@@ -162,4 +166,6 @@ body {
     width: 50px;
     height: 2px;
     background: black;
+=======
+>>>>>>> master
 }
