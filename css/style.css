@@ -115,8 +115,12 @@ body {
 
 #mainvideo_container {
     width: 90vw;
-    clear: both;
-    float: right;
+    right: 0;
+    top: 0;
+}
+
+#mainvideo {
+    width: 100%;
 }
 
 #mainvideotext_container {
@@ -147,9 +151,7 @@ body {
     font-size: 80px;
     color: #e6e6e6;
 }
-#mainvideo {
-    height: 100vh;
-}
+
 
 .nav_container {
     display: flex;
