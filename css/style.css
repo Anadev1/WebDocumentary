@@ -6,9 +6,49 @@
     box-sizing: border-box;
 }
 
-img,
-video,
-frame {
-    max-width: 100%;
-    height: auto;
+.story_container {
+    background-color: #03004d;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 14px;
+}
+
+.story_title {
+    font-family: 'Crimson Text';
+    padding: 10px 450px;
+    text-align: end;
+}
+
+.line_separator1 {
+    border-bottom: #b6b2b2 solid 10px;
+    width: 1200px;
+    float: right;
+}
+
+.line_separator2 {
+    border-bottom: #b6b2b2 solid 10px;
+    width: 1200px;
+}
+
+.story_section1 {
+    margin: 0px 50px;
+    display: flex;
+    clear: both;
+}
+
+.story_section2 {
+    margin: 0px 50px;
+    display: flex;
+}
+
+.story_image {
+    height: 220px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.story_text {
+    margin: 20px;
+    text-align: justify;
+
 }
