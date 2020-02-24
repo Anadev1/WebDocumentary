@@ -12,7 +12,7 @@ frame {
     max-width: 100%;
     height: auto;
 }
-img {
+.gallery_pics {
     width: 450px;
     height: auto;
     margin-right: 50px;
@@ -28,7 +28,6 @@ img {
 #mainvideo_container {
     width: 90vw;
     float: right;
-
 }
 #mainvideo {
     height: 100vh;
@@ -42,7 +41,7 @@ img {
     height: 100vh;
     margin: auto;
     justify-content: space-around;
-    width: 10vw;
+    width: 200px;
     background-color: lightgray;
 
 }
