@@ -58,7 +58,7 @@
     </aside>
     <main>
 
-        <div id="mainvideo_container">
+        <section id="mainvideo_container">
             <div id="blackrec">
             </div>
             <video id="mainvideo" autoplay loop muted>
@@ -69,8 +69,8 @@
                 <p id="line"></p>
                 <h2 id="shop">NØGLESMED</h2>
             </div>
-        </div>
-        <div class="story_container" id='about'>
+        </section>
+        <section class="story_container" id='about'>
             <h1 class="story_title">My Story</h1>
             <p class="line_separator1"></p>
             <div class="story_section1">
@@ -89,33 +89,35 @@
                 </p>
                 <img src="images/image2.JPG" class="story_image" alt="Lock Smith">
             </div>
-            
-            
-            
-        </div>
-        <div id="videos_section">
-            <h1 id="videosection_title">See my craft</h1>
-            <div id="videos_container">
-                <div class="video_container">
-                    <p class="video_description">Watch me make a door key</p>
-                    <video class="craft_video" controls muted id="video1">
+        </section>
+        
+        <section id="first_video">
+            <div id="video1_container">
+                    <p class="video_description">The process of making a door key</p>
+                    <video class="craft_video" id="video1" muted>
                         <source src="media/keymaking1.mp4" type="video/mp4"></video>
-                </div>
-                <div class="video_container">
-                    <p class="video_description">Watch me make a car key</p>
-                    <video class="craft_video" controls muted>
-                        <source src="media/keymaking2.mp4" type="video/mp4"></video>
-                </div>
             </div>
-        </div>
-        <div id="gallery_container">
-            
+        </section>
+        
+        <section id="second_video">
+            <div id="video2_container">
+                <p class="video_description">Watch me make a car key</p>
+                <video class="craft_video" id="video2" muted>
+                    <source src="media/keymaking2.mp4" type="video/mp4"></video>
+            </div>
+        </section>
+        
+        
+        <section id="gallery_container">
+
             <div id="gallery">
                 <h1 id="gallery_title">Come to my store</h1>
             </div>
-        </div>
+        </section>
         <div id='contact'>call meee</div>
     </main>
     <footer></footer>
     <script type="text/javascript" src="js/js.js"></script>
-</body></html>
+</body>
+
+</html>

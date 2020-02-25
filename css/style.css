@@ -6,27 +6,54 @@
     box-sizing: border-box;
 }
 
+img,
+video,
+frame {
+    max-width: 100%;
+    height: auto;
+}
+
 main {
     width: 90vw;
+    display: flex;
+    flex-direction: column;
     float: right;
 }
 
-#videos_section {
-    width: 90vw;
+#first_video {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding-top: 15vh;
-    justify-content: space-between;
-    text-align: center;
-    
+    width: 90vw;
 }
 
-#videos_container {
+#second_video {
+    height: 100vh;
+    width: 90vw;
+}
+
+#video1 {
+    width: 60vw;
+}
+
+#video2 {
+    width: 60vw;
+}
+
+#video1_container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     padding-bottom: 20vh;
+    width: 60vw;
+    margin: 50px auto;
+}
+
+#video2_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20vh;
+    width: 60vw;
+    margin: 50px auto;
 }
 
 #videosection_title {
@@ -38,12 +65,9 @@ main {
     padding-bottom: 40px;
     padding-top: 25px;
     font-size: 35px;
-    border: solid 5px #ffffff;
-}
-
-.video_container {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .craft_video {
@@ -142,12 +166,13 @@ body {
 }
 
 #mainvideo_container {
-   
+    height: 100vh;
 }
 
 #mainvideo {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    object-fit: cover;
 }
 
 #mainvideotext_container {
