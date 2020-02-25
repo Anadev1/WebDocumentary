@@ -1,3 +1,4 @@
+
 *,
 *:after,
 *:before {
@@ -11,6 +12,10 @@ video,
 frame {
     max-width: 100%;
     height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 main {
@@ -154,6 +159,7 @@ body {
     height: auto;
     margin-right: 50px;
     margin-bottom: 100px;
+    border-radius: 10px;
 }
 
 #gallery_container {

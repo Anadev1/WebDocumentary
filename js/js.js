@@ -1,13 +1,76 @@
 //gallery
-let theGallery = [ "DSC06397.JPG", "DSC06402.JPG", "DSC06406.JPG",
-                 "DSC06395.JPG", "DSC06403.JPG", "DSC06398.JPG" ];
+let theGallery = ["DSC06397.JPG", "DSC06402.JPG", "DSC06406.JPG",
+                 "DSC06395.JPG", "DSC06403.JPG", "DSC06398.JPG"];
 let gal = document.getElementById("gallery");
 
 for (let i = 0; i < theGallery.length; i++) {
-    console.log("am I active or what?");
-  gal.innerHTML += '<img src="images/' 
-      + theGallery[i] 
-      + '" alt="pictures from the store" class="gallery_pics">';
+    gal.innerHTML += '<img src="images/' +
+        theGallery[i] +
+        '" alt="pictures from the store" class="gallery_pics">';
+}
+
+//videos & audio 
+
+window.addEventListener("scroll", function () { // detect scroll event
+
+    var mySound1 = document.getElementById("myaudio1");
+    var mySound2 = document.getElementById("myaudio2");
+    var sound1 = document.getElementById("sound1");
+    var sound2 = document.getElementById("sound2");
+    var vid = document.getElementById("video1");
+    var vid2 = document.getElementById("video2");
+    //console.log("Er div #lyd synlig? " + elFllVsbl(lyd)); // test
+
+    vid.muted = true;
+    vid2.muted = true;
+
+
+    if (elFllVsbl(sound1)) {
+        if (!(mySound1.curentTime > 0)) {
+            mySound1.play();
+        }
+
+    } else {
+        mySound1.pause();
+        mySound1.currentTime = 0;
+    }
+    
+    if (elFllVsbl(sound2)) {
+        if (!(mySound2.curentTime > 0)) {
+            mySound2.play();
+        }
+
+    } else {
+        mySound2.pause();
+        mySound2.currentTime = 0;
+    }
+    
+
+    if (elFllVsbl(vid)) {
+        if (!(vid.curentTime >= 0)) {
+            vid.play();
+        }
+
+    } else {
+        vid.pause();
+        vid.currentTime = 0;
+    }
+
+    if (elFllVsbl(vid2)) {
+        if (!(vid2.curentTime >= 0)) {
+            vid2.play();
+        }
+
+    } else {
+        vid2.pause();
+        vid2.currentTime = 0;
+    }
+
+})
+
+// this function will check whether a tag is visible
+function elFllVsbl(el) {
+    return (el.getBoundingClientRect().top >= 0 && el.getBoundingClientRect().bottom < window.innerHeight);
 }
 
 //home
