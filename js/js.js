@@ -1,3 +1,13 @@
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
 //gallery
 let theGallery = ["DSC06397.JPG", "DSC06402.JPG", "DSC06406.JPG",
                  "DSC06395.JPG", "DSC06403.JPG", "DSC06398.JPG"];

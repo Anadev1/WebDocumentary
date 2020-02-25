@@ -1,4 +1,3 @@
-
 *,
 *:after,
 *:before {
@@ -23,6 +22,71 @@ main {
     display: flex;
     flex-direction: column;
     float: right;
+}
+
+.footer_container {
+    height: 100vh;
+    width: 89vw;
+    float: right;
+    background-color: #03004d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.things {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 0;
+
+}
+
+.footer_text {
+    color: white;
+    margin-bottom: 2px;
+    font-family: "Raleway";
+    font-size: 20px;
+}
+
+.text {
+    width: auto;
+    margin: auto;
+    font-size: 24px;
+}
+
+.footer_titles {
+    color: white;
+    margin-bottom: 5px;
+    font-family: "Raleway";
+}
+
+.footer_title {
+    color: white;
+    font-size: 54px;
+    margin: auto;
+    font-family: "Crimson Text";
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #03004d;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 8px;
+    background: #b6b2b2;
+    width: 0%;
 }
 
 #first_video {
@@ -106,8 +170,9 @@ main {
     font-size: 20px;
     width: 90vw;
     height: 100vh;
-    float: right;  
+    float: right;
 }
+
 .story_title {
     font-family: 'Crimson Text';
     padding: 24px 450px;
