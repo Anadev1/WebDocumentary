@@ -1,4 +1,4 @@
-// When the user scrolls the page, execute myFunction
+
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -21,7 +21,7 @@ for (let i = 0; i < theGallery.length; i++) {
 
 //videos & audio 
 
-window.addEventListener("scroll", function () { // detect scroll event
+window.addEventListener("scroll", function () { 
 
     var mySound1 = document.getElementById("myaudio1");
     var mySound2 = document.getElementById("myaudio2");
@@ -29,7 +29,7 @@ window.addEventListener("scroll", function () { // detect scroll event
     var sound2 = document.getElementById("sound2");
     var vid = document.getElementById("video1");
     var vid2 = document.getElementById("video2");
-    //console.log("Er div #lyd synlig? " + elFllVsbl(lyd)); // test
+    
 
     vid.muted = true;
     vid2.muted = true;
@@ -78,7 +78,7 @@ window.addEventListener("scroll", function () { // detect scroll event
 
 })
 
-// this function will check whether a tag is visible
+
 function elFllVsbl(el) {
     return (el.getBoundingClientRect().top >= 0 && el.getBoundingClientRect().bottom < window.innerHeight);
 }
@@ -206,6 +206,7 @@ gallery.addEventListener('mouseout', function () {
     img_locker_gallery.setAttribute("style", "content: url('../media/closed.png');");
     elementBGgallery.setAttribute("style", "background: lightgray;")
 });
+
 //contact
 
 var elementBGcontact = document.getElementById('elementBGcontact');
@@ -233,3 +234,4 @@ contact.addEventListener('mouseout', function () {
     img_locker_contact.setAttribute("style", "content: url('../media/closed.png');");
     elementBGcontact.setAttribute("style", "background: lightgray;")
 });
+
