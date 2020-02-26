@@ -93,9 +93,9 @@ body {
 
 .things {
     display: flex;
-    justify-content: space-around;
-    margin: auto 0;
-
+    flex-direction: row;
+    margin-left: 15vh;
+    margin-bottom: 5vh;
 }
 
 .footer_text {
@@ -107,7 +107,7 @@ body {
 
 .text {
     width: auto;
-    margin: auto;
+    margin-left: 20vh;
     font-size: 24px;
 }
 
@@ -120,7 +120,6 @@ body {
 .footer_title {
     color: white;
     font-size: 54px;
-    margin: auto;
     font-family: "Crimson Text";
     padding-top: 5vh;
 }
@@ -294,6 +293,7 @@ body {
 .line_separator2 {
     border-bottom: #b6b2b2 solid 10px;
     width: 1200px;
+    margin-top: 10vh;
 }
 
 .story_section1 {
